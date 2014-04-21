@@ -1,3 +1,4 @@
+/* start @fontface */
 @font-face {
     font-family: 'baron_neue';
     src: url('../fonts/baron_neue-webfont.eot');
@@ -46,12 +47,46 @@
 
 }
 
+/* end @fontface */
+
+/* start sticky footer components */
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin: 0 0 12px; /* bottom = footer height */
+}
+
+footer {
+    font-family: 'baron_neue';
+    text-align: right;
+    font-size: 0.6em;
+    color: gray;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 12px;
+    width: 100%;
+}
+
+footer a {
+    color: gray;
+}
+
+footer a:hover {
+    color: white;
+}
+/* end sticky footer components */
+
 .container {
     width: 542px;
     position: absolute;
     left: 50%;
     top: 15%;
     margin: -40px 0 0 -271px;
+    flex: 1;
 }
 
 .box {
@@ -158,6 +193,11 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: #b0b0b0;
+    text-shadow: 1px 1px 3px #000;
+}
+
 .submit {
     border: none;
     background-color: gray;
@@ -190,10 +230,12 @@ a {
     }
 
     .mobile-view {
+        width: 100%;
     }
 
     .small-logo {
-
+        margin: 0 auto;
+        display: block;
     }
 
     .bounding-box {
@@ -230,5 +272,8 @@ a {
         text-align: center;
     }
 
+    .contact-link {
+        padding-top: 1.1em;
+    }
 
 }
