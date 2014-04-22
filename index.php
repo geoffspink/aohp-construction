@@ -1,15 +1,14 @@
 <?php
     if (isset($_POST['name']) && isset($_POST['email']) && isset($_POST['message'])) {
-        // echo '<pre>';
-        // var_dump($_POST);
-        // echo '</pre>';
             $name = htmlspecialchars($_POST['name']);
             $email = htmlspecialchars($_POST['email']);
             $message = htmlspecialchars($_POST['message']);
+
             $headers = "From: " . strip_tags($_POST['email']) . "\r\n";
             $headers .= "Reply-To: ". strip_tags($_POST['email']) . "\r\n";
             $headers .= "MIME-Version: 1.0\r\n";
             $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+
             $body = "<html><body>";
             $body .= "<p>Hi Arron</p>";
             $body .= "<p>The following message was received from your website<br /></p>";
@@ -17,12 +16,9 @@
             $body .= "<p><strong>Contact email: </strong><br /><a href='mailto:" . $email . "'>" . $email . "</a><p>";
             $body .= "<p><strong>Message: </strong><br />" . $message;
             $body .= "</p></body></html>";
-        // echo '<pre>';
-        // var_dump($body);
-        // echo '</pre>';
+
             mail('info@arronollington.com.au', 'Contact from your Website.', $body, $headers);
             echo "<script type='text/javascript'>confirm('Your message has been sent');</script>";
-            // header("Location: .");
     }
 ?>
 <!DOCTYPE html>
