@@ -41,10 +41,10 @@
             <p class='const-text'>website under construction&hellip;</p>
         </div>
         <div class='mobile-view'>
-            <img class='small-logo' src="images/aohp-250x250.png" width="200" height="200" />
+            <img class='small-logo' src="images/aohp-250x250.png" width="200" height="200" alt="Arron Ollington Logo" />
         </div>
         <div class='bounding-box'>
-            <img class='logo' src="images/aohp-75x75.png" />
+            <img class='logo' src="images/aohp-75x75.png" alt="Arron Ollington Logo" />
             <span class='arronollington'>arron ollington</span>
             <br />
             <span class='handcraftedprojects'>handcrafted projects</span>
@@ -60,15 +60,15 @@
             <form name='contact-form' method='POST' action=''>
                 <div>
                     <label for='name'>Name: </label>
-                    <input type='text' name='name' />
+                    <input type='text' name='name' id='name' />
                 </div>
                 <div>
                     <label for='email'>Email: </label>
-                    <input type='text' name='email' />
+                    <input type='text' name='email' id='email' />
                 </div>
                 <div>
                     <label for='message'>Message: </label>
-                    <textarea name='message' rows='4' cols='16'></textarea>
+                    <textarea name='message' rows='4' cols='16' id='message'></textarea>
                 </div>
                 <div>
                     <input type='submit' value="Send" class='submit' />
