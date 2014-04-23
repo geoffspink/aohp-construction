@@ -2,19 +2,19 @@
             <a class='contact-link' href='#'>Contact me <span>&#x25BC;</span></a>
             <div class='contact-form'>
                 <form name='contact-form' id='contact-form' method='POST' action='processForm.php'>
-                    <div>
+                    <div class='clear'>
                         <label for='name'>Name: </label>
                         <input type='text' name='name' id='name' />
                     </div>
-                    <div>
+                    <div class='clear'>
                         <label for='email'>Email: </label>
                         <input type='text' name='email' id='email' />
                     </div>
-                    <div>
+                    <div class='clear'>
                         <label for='message'>Message: </label>
                         <textarea name='message' rows='4' cols='16' id='message'></textarea>
                     </div>
-                    <div>
+                    <div class='clear'>
                         <input type='submit' value="Send" class='submit' />
                     </div>
                 </form>

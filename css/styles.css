@@ -140,6 +140,19 @@ body {
     }
 }
 
+.left-block {
+    font-family: 'baron_neue_bold';
+    display: block;
+    float: left;
+    padding-top: 20px;
+}
+
+.right-block {
+    display: block;
+    float: right;
+    padding-top: 20px;
+}
+
 .contact-form {
     font-size: 1.0em;
 }
@@ -153,21 +166,9 @@ label {
 }
 
 input {
-  display: inline-block;
-  float: left;
-}
-
-.left-block {
-    font-family: 'baron_neue_bold';
-    display: block;
+    display: inline-block;
     float: left;
-    padding-top: 10px;
-}
-
-.right-block {
-    display: block;
-    float: right;
-    padding-top: 10px;
+    margin-bottom: 10px;
 }
 
 .contact-link {
@@ -176,8 +177,14 @@ input {
     height:100%;
     display: block;
     font-size: 1.0em;
-    padding: 10px 0px;
+    padding: 20px 0px;
     text-align: center;
+}
+
+.clear {
+    clear: both;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 .processMessage {
